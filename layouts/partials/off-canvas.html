@@ -40,14 +40,6 @@
             <li><a class="email" target="_blank" href="{{ .url }}">{{ .name }}</a></li>
             <li><a target="_blank" href="{{ .Site.BaseURL }}misc/yourPGPkey.txt"><img class="key_img" src="{{ .Site.BaseURL }}img/key.png"></a></li>
         {{ end }}
-        </ul>     
-
-        {{ with .Site.Params.offcanvas.subscribe }}
-        <h6>{{ . }}</h6>
-        {{ end }}
-
-        <ul>
-            <li><a class="rss" target="_blank" href="{{ .Site.BaseURL }}index.xml">RSS feed</a></li>
-        </ul>   
+        </ul>  
     </nav>
 </div>
