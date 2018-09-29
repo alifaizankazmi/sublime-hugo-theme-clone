@@ -35,11 +35,13 @@
         <h6>{{ . }}</h6>
         {{ end }}
 
-        <ul>
         {{ range .Site.Params.offcanvas.socialnetworks }}
-            <li><a class="email" target="_blank" href="{{ .url }}">{{ .name }}</a></li>
-            <li><a target="_blank" href="{{ .Site.BaseURL }}misc/yourPGPkey.txt"><img class="key_img" src="{{ .Site.BaseURL }}img/key.png"></a></li>
+            <a href="{{ .url }}"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/alifaizankazmi/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/alifaizankazmi"><i class="fa fa-github-alt"></i></a>
+            <a href="https://twitter.com/AliFaizanKazmi"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/ali.faizan.kazmi"><i class="fa fa-facebook"></i></a>
+            <a target="_blank" href="{{ .Site.BaseURL }}misc/yourPGPkey.txt"><img class="key_img" src="{{ .Site.BaseURL }}img/key.png"></a>
         {{ end }}
-        </ul>  
     </nav>
 </div>
